@@ -16,7 +16,7 @@ form.addEventListener('submit', async (e) => {
     try {
 
         const resposta = await fetch(
-            'http://localhost:3000/cadastro',
+            'https://clube-clientes-production.up.railway.app/cadastro',
             {
 
                 method: 'POST',
