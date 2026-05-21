@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel ADM - Super Batista</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Painel ADM</h1>
+    <p>Clientes cadastrados no Clube de Promoções</p>
+
+    <input type="text" id="pesquisa" placeholder="Pesquisar por nome ou telefone...">
+
+    <div class="card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody id="listaClientes"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
