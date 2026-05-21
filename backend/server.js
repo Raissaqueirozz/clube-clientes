@@ -41,8 +41,9 @@ app.post('/cadastro', (req, res) => {
         (nome, telefone, endereco)
         VALUES (?, ?, ?)
     `;
-
+    console.log('Tentando salvar:', nome, telefone, endereco);
     db.query(
+        
         sql,
         [nome, telefone, endereco],
 
@@ -56,7 +57,7 @@ app.post('/cadastro', (req, res) => {
                     erro: 'Erro ao cadastrar'
                 });
             }
-
+            console.log('Cliente salvo no banco:', result);
             try {
 
                 await client.messages.create({
