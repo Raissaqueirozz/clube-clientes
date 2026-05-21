@@ -1,75 +1,104 @@
-body{
-
-    margin: 0;
-    padding: 0;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    background: #f2f2f2;
-}
-
-.container{
-
-    width: 350px;
-
-    background: white;
-
-    margin: 80px auto;
-
-    padding: 30px;
-
-    border-radius: 10px;
-
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1{
-
-    text-align: center;
-    color: #1b5e20;
-}
-
-p{
-
-    text-align: center;
-    color: #555;
-}
-
-input{
-
-    width: 100%;
-
-    padding: 12px;
-
-    margin-bottom: 15px;
-
-    border: 1px solid #ccc;
-
-    border-radius: 5px;
-
+*{
     box-sizing: border-box;
 }
 
-button{
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #001b8f, #0057d9, #ffdd00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
+.card{
     width: 100%;
+    max-width: 420px;
+    background: white;
+    border-radius: 24px;
+    padding: 28px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    border: 5px solid #ffdd00;
+}
 
-    padding: 12px;
+.logo{
+    width: 230px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
 
-    background: #1b5e20;
+h1{
+    margin: 10px 0;
+    color: #e50000;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
 
-    color: white;
+.subtitulo{
+    color: #001b8f;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
 
+input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 13px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus{
+    border-color: #001b8f;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    margin: 8px 0 18px;
+}
+
+.checkbox input{
+    width: auto;
+}
+
+button{
+    width: 100%;
+    padding: 16px;
     border: none;
-
-    border-radius: 5px;
-
+    border-radius: 14px;
+    background: linear-gradient(90deg, #e50000, #ffdd00);
+    color: #001b8f;
+    font-size: 17px;
+    font-weight: 900;
     cursor: pointer;
-
-    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 6px 0 #001b8f;
 }
 
 button:hover{
+    transform: translateY(-2px);
+}
 
-    background: #2e7d32;
+button:active{
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 #001b8f;
+}
+
+.rodape{
+    margin-top: 20px;
+    color: #001b8f;
+    font-size: 14px;
+    font-weight: bold;
 }

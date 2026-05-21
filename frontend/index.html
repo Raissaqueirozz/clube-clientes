@@ -1,66 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Clube de Clientes</title>
-
+    <title>Clube de Promoções - Super Batista</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-    <div class="container">
+    <div class="card">
+        <img src="logo.jpeg" class="logo">
 
-        <h1>Receba promoções do mercado 🛒</h1>
+        <h1>Clube de Promoções</h1>
 
-        <p>
-            Cadastre-se para receber ofertas exclusivas
+        <p class="subtitulo">
+            Cadastre-se e receba ofertas exclusivas no seu WhatsApp!
         </p>
 
         <form id="form">
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
 
-            <input
-                type="text"
-                id="nome"
-                placeholder="Seu nome"
-                required
-            >
+            <input type="text" id="telefone" placeholder="Digite seu WhatsApp" required>
 
-            <input
-                type="text"
-                id="telefone"
-                placeholder="Seu telefone"
-                required
-            >
+            <input type="text" id="endereco" placeholder="Endereço (opcional)">
 
-            <input
-                type="text"
-                id="endereco"
-                placeholder="Endereço (opcional)"
-            >
             <label class="checkbox">
-
                 <input type="checkbox" required>
-            
-                Aceito receber promoções do mercado
-            
+                Aceito receber promoções do Super Batista
             </label>
 
             <button type="submit">
-                Cadastrar
+                Quero receber promoções
             </button>
-
         </form>
 
+        <p class="rodape">
+            🛒 Ofertas, cupons e novidades direto no seu celular
+        </p>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
