@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
 
     host: process.env.MYSQLHOST,
 
@@ -22,14 +22,7 @@ const db = mysql.createConnection({
     port: process.env.MYSQLPORT
 });
 
-db.connect((err) => {
-
-    if(err){
-        console.log('Erro ao conectar:', err);
-    } else {
-        console.log('Banco conectado');
-    }
-});
+console.log('Banco configurado');
 
 const client = twilio(
     process.env.TWILIO_SID,
